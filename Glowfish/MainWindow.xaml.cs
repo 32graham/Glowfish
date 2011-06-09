@@ -31,21 +31,11 @@ namespace Glowfish {
             slider1.Value = 10;
             key = 42;
 
+            Password = "tan";
 
-            ((App)Application.Current).myAppInt = 7;
-
-            bool loadFile = false;
-
-            if (loadFile) {
-
-            }
-            else {
-                Password = "tan";
-
-                DataManager.TryCreateTable();
+            DataManager.TryCreateTable();
                 
-                listView1.ItemsSource = DataManager.NameList;
-            }
+            listView1.ItemsSource = DataManager.NameList;
 
         }
 
